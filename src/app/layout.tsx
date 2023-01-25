@@ -1,10 +1,11 @@
-import './globals.css'
+import { FC } from "react";
+import "@/styles/globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+interface PropsTypes {
+  children: React.ReactNode;
+}
+
+const Layout: FC<PropsTypes> = ({ children }) => {
   return (
     <html lang="en">
       {/*
@@ -14,5 +15,7 @@ export default function RootLayout({
       <head />
       <body>{children}</body>
     </html>
-  )
-}
+  );
+};
+
+export default Layout;
