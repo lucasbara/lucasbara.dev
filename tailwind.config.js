@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.tsx"],
@@ -13,6 +11,12 @@ module.exports = {
       lightGrey: "#838383",
       transparent: "transparent",
       white: "f4f8fa",
+    },
+    fontFamily: {
+      clash: ["Clash", "sans-serif"],
+    },
+    fontSize: {
+      "2xl": "7.5rem",
     },
   },
 };
