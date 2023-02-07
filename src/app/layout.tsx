@@ -1,12 +1,11 @@
-import { FC } from "react";
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 
-interface PropsTypes {
+type Props = {
   children: React.ReactNode;
-}
+};
 
-const Layout: FC<PropsTypes> = ({ children }) => {
+const Layout = ({ children }: Props) => {
   return (
     <html lang="en">
       {/*
@@ -14,7 +13,6 @@ const Layout: FC<PropsTypes> = ({ children }) => {
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <Navbar />
       <body>{children}</body>
     </html>
   );
