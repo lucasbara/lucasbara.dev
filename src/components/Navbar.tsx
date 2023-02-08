@@ -6,6 +6,11 @@ import LucasBaraLogoSVG from "@/assets/svgs/logo.svg";
 import MenuSVG from "@/assets/svgs/menu.svg";
 import CloseSVG from "@/assets/svgs/close.svg";
 
+const menuVariant = {
+  open: { rotate: 0 },
+  closed: { rotate: 180 },
+};
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -66,11 +71,14 @@ const Navbar = () => {
           onClick={handleMenu}
           type="button"
         >
-          {!isMenuOpen ? (
-            <MenuSVG className="w-[20px] h-[20px]" />
-          ) : (
-            <CloseSVG className="w-[20px] h-[20px]" />
-          )}
+          <motion.svg
+            variants={menuVariant}
+            animate={isMenuOpen ? "closed" : "open"}
+            transition={{ duration: 0.35 }}
+            className="w-[20px] h-[20px]"
+          >
+            {!isMenuOpen ? <MenuSVG /> : <CloseSVG />}
+          </motion.svg>
         </button>
       </ul>
     </nav>
