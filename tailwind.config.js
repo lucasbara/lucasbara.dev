@@ -10,7 +10,7 @@ module.exports = {
       grey: "#2f2e2e",
       lightGrey: "#838383",
       transparent: "transparent",
-      white: "f4f8fa",
+      white: "#f4f8fa",
     },
     fontFamily: {
       clash: ["Clash", "sans-serif"],
