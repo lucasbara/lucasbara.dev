@@ -11,11 +11,11 @@ const Hero = () => {
       <header className="h-[2%]">
         <Navbar />
       </header>
-      <main className="h-[96%]  flex justify-between items-center font-clash">
+      <main className="relative h-[96%] flex flex-col md:flex-row directi column justify-between items-center font-clash">
         <p className="w-1/6 text-lightGrey uppercase font-semibold pl-20">
           Lucas <br /> Barallobre
         </p>
-        <h1 className="font-semibold text-white text-2xl leading-[8rem] align-middle z-10 pr-10">
+        <h1 className="font-semibold text-white text-xl md:text-2xl leading-[3rem] md:leading-[8rem] align-middle z-10 pr-10">
           Building the <br />
           products of <br />
           the future
