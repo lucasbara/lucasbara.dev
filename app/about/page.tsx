@@ -1,10 +1,13 @@
-import Link from 'next/link';
 import React from 'react';
-import { Navigation } from '../components/nav';
-import { Card } from '../components/card';
-import { Eye } from 'lucide-react';
 
-export default async function ProjectsPage() {
+import { Eye } from 'lucide-react';
+import { redirect } from 'next/navigation';
+
+import Card from '../components/card';
+import Navigation from '../components/nav';
+
+export default async function AboutPage() {
+  redirect('/');
   return (
     <div className="relative pb-16">
       <Navigation />

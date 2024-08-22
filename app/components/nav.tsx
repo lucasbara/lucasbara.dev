@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-export function Navigation() {
+export default function Navigation() {
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
 

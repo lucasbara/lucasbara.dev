@@ -7,7 +7,7 @@ type CardProps = {
   children: ReactNode;
 };
 
-export function Card({ children }: CardProps) {
+export default function Card({ children }: CardProps) {
   const mouseX = useSpring(0, { stiffness: 500, damping: 100 });
   const mouseY = useSpring(0, { stiffness: 500, damping: 100 });
 
