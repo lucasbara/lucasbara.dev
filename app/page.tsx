@@ -1,12 +1,8 @@
-import Link from "next/link";
-import React from "react";
-import Particles from "./components/particles";
+import Link from 'next/link';
+import React from 'react';
+import Particles from './components/particles';
 
-const navigation = [
-  { name: "About", href: "/about" },
-  { name: "Work", href: "/work" },
-  { name: "Contact", href: "/contact" },
-];
+const navigation = [{ name: 'Contact', href: '/contact' }];
 
 export default function Home() {
   return (
@@ -26,8 +22,8 @@ export default function Home() {
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
-        className="absolute inset-0 -z-10 animate-fade-in bg-gray-900"
-        quantity={500}
+        className="absolute inset-0 -z-10 animate-fade-in bg-slate-950"
+        quantity={300}
         staticity={20}
       />
       <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
@@ -36,12 +32,8 @@ export default function Home() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
-          Software Engineer
-          with a creative mind
-        </h2>
+        <h2 className="text-sm text-zinc-500 ">Software Engineer</h2>
       </div>
     </div>
   );
-
 }
