@@ -55,7 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`bg-black ${
           process.env.NODE_ENV === 'development' ? 'debug-screens' : undefined
-        }`}
+        } overflow-hidden`}
       >
         {children}
       </body>
